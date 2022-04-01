@@ -9,26 +9,32 @@
 ## 2. Git Config
 
 * [**Local Configuration**](#config-local)
+* [**GitHub Configuration**](#config-github)
 
 
 
-## 3. Git 
+## 3. Branch
+
+* [**Branch**](#git-branch)
+* [**Checkout Branch**](#git-checkout)
+* [**Merging Branch**](#git-merge)
+
 
 
 ---
 # <a name = "git-info"></a> Git Directory Information
 ---
 
-##Git Directory
+## Git Directory
 
 The .git directory is where Git stores the metadata and object database for the repository
 
-##Working Directory
+## Working Directory
 
 A copy of one version of the git project, taken from compressed database in the .git directory
 
 
-##Staging Area/Index
+## Staging Area/Index
 
 File that stores information about what will next be committed into the git repository
 
@@ -54,7 +60,34 @@ A file is in the committed state when all the changes made to the file have been
 
 
 ---
-# <a name = "three-states"></a> The Three States
+# <a name = "config-github"></a> GitHub Configuration
 ---
 
+---
+# <a name = "git-branch"></a> Branch
+---
 
+### List all branches
+
+* ```git branch or git branch -l```
+* Current branch will be highlighted with an asterisk *
+
+### Creating a new branch
+
+* ```git branch BRANCH_NAME```
+* Different version but a clone of main branch
+* Typically for starting new work in a team and people working on different features or seperating the test to prod mentality
+
+### Deleting a branch
+
+* ```git branch -D BRANCH_NAME```
+
+
+
+---
+# <a name = "git-checkout"></a> Checkout Branch
+---
+
+---
+# <a name = "git-merge"></a> git-branch
+---
