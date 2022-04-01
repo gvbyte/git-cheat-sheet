@@ -17,6 +17,8 @@
 * [**List all branches**](#git-branch)
 * [**Creating a new branch**](#git-branch)
 * [**Checkout Branch**](#git-checkout)
+* [**Merging branch**](#git-merge)
+* [**Deleting a branch**](#git-branchdel)
 
 
 
@@ -25,20 +27,6 @@
 # General Information
 ---
 
-### <a name = "git-info"></a> Hidden files and folders
-
-##### Git Directory
-
-The .git directory is where Git stores the metadata and object database for the repository
-
-##### Working Directory
-
-A copy of one version of the git project, taken from compressed database in the .git directory
-
-
-##### Staging Area/Index
-
-File that stores information about what will next be committed into the git repository
 
 ### <a name = "three-states"></a> The Three States
 
@@ -63,6 +51,20 @@ File that stores information about what will next be committed into the git repo
 * A file is in the committed state when all the changes made to the file have been saved in the local repo. Files in the committed stage are files ready to be pushed to the remote repo (on GitHub).
 
 
+### <a name = "git-info"></a> Hidden files and folders
+
+##### Git Directory
+
+The .git directory is where Git stores the metadata and object database for the repository
+
+##### Working Directory
+
+A copy of one version of the git project, taken from compressed database in the .git directory
+
+
+##### Staging Area/Index
+
+File that stores information about what will next be committed into the git repository
 
 
 
@@ -75,6 +77,33 @@ File that stores information about what will next be committed into the git repo
 ---
 # Configuration
 ---
+### <a name = "config-local"></a> Local Configuration
+
+
+
+### <a name = "config-github"></a> Github Configuration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,16 +117,16 @@ File that stores information about what will next be committed into the git repo
 * ```git branch or git branch -l```
 * Current branch will be highlighted with an asterisk *
 
-### Creating a new branch
+### <a name = "git-branch"></a> Creating a new branch
 * ```git branch BRANCH_NAME```
 * Different version but a clone of main branch
 * Typically for starting new work in a team and people working on different features or seperating the test to prod mentality
 
-### Checkout branch
+### <a name = "git-checkout"></a> Checkout branch
 * ```git checkout BRANCH_NAME```
 * This command allows you to switch branch
 
-### Merging branch
+### <a name = "git-merge"></a> Merging branch
 * Make sure you have switched to destination before using command
 * ```git merge BRANCH_NAME```
 * Deletes the branch using ```--force``` option
@@ -126,7 +155,7 @@ This command is used by git pull to incorporate changes from another repository 
                
 from git help merge                    
 ```
-### Deleting a branch
+### <a name = "git-branchdel"></a> Deleting a branch
 
 * ```git branch -D BRANCH_NAME```
 * Deletes the branch using ```--force``` option
